@@ -51,7 +51,7 @@ class UnownedTests: XCTestCase {
         
         for lhs in objects {
             for rhs in objects {
-                XCTAssert((Unowned(lhs) == Unowned(rhs)) == (lhs.isEqual(to: rhs as NSString)))
+                XCTAssert((Unowned(lhs) == Unowned(rhs)) == (lhs.isEqual(to: rhs as String)))
             }
         }
     }
